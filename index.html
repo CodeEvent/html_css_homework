@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <head>
+    <title>HTML & CSS Homework</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 * {
   box-sizing: border-box;
 }
@@ -70,7 +70,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: teal;
+  background-color:dodgerblue;
   color: #fff;
  }
  .nav-links a {
@@ -86,140 +86,100 @@ footer {
   gap: 1em;
   font-size: 18px;
  }
- .menu li:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
-  transition: 0.3s ease;
- }
- .menu li {
-  padding: 5px 14px;
- }
- /* DROPDOWN MENU */
- .services {
-  position: relative; 
- }
- .dropdown {
-  background-color: rgb(1, 139, 139);
-  padding: 1em 0;
-  position: absolute; /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 8px;
-  top: 35px;
- }
- .dropdown li + li {
-  margin-top: 10px;
- }
- .dropdown li {
-  padding: 0.5em 1em;
-  width: 8em;
-  text-align: center;
- }
- .dropdown li:hover {
-  background-color: #4c9e9e;
- }
- .services:hover .dropdown {
-  display: block;
- }
-</style>
-</head>
-<body>
-
-
-  <nav class="navbar">
-    <!-- LOGO -->
-    <div class="logo">CodeClan News</div>
-    <!-- NAVIGATION MENU -->
-    <ul class="nav-links">
-      <!-- USING CHECKBOX HACK -->
-      <input type="checkbox" id="checkbox_toggle" />
-      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-      <!-- NAVIGATION MENUS -->
-      <div class="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li class="services">
-          <a href="/">Services</a>
-          <!-- DROPDOWN MENU -->
-          <ul class="dropdown">
-            <li><a href="/">Dropdown 1 </a></li>
-            <li><a href="/">Dropdown 2</a></li>
-            <li><a href="/">Dropdown 2</a></li>
-            <li><a href="/">Dropdown 3</a></li>
-            <li><a href="/">Dropdown 4</a></li>
-          </ul>
-        </li>
-        <li><a href="/">Pricing</a></li>
-        <li><a href="/">Contact</a></li>
-      </div>
-    </ul>
-  </nav>
-<header>
-  <h2 id="logo">CodeClan News</h2>
-</header>
-
-<section>
-  <nav>
-    <h1>Login</h1>
-    <div class="respond">
-      <form name="login">
-      <p class="paragraph">Username <input class="login" type="text" placeholder="Enter Username" name="userid"/></p>
-      <p class="paragraph">Password <input class="login" type="password" placeholder="Enter Password" name="pswrd"/></p>
-      <p class="paragraph"><input type="button" onclick="check(this.form)" value="Submit"/></p>
-      </form>
-  </nav>
-  
-  <article>
-    <h1>Latest</h1>
-    <h4>Blog News</h4>
-
-<section>
-  <nav>
-
-  </nav>
-</section>
-    
-   
-  </article>
-</section>
-
-
-<section>
-  <nav>
-
-    <h1>Main Article Headline</h1>
-    <h4>Author Name</h4>
-    
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-    <div id="respond">
-
-      <h3>Leave a Comment</h3>
-    
-      <form action="post_comment.php" method="post" id="commentform">
-        <label for="comment" class="required">Your message</label>
-        <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
-    
-      
-        <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-        <input name="submit" type="submit" value="Submit comment" />
-    
-      </form>
-    </div>
-  
-  
-  
-  </nav>
-</section>
-
-<section>
-
 
  
+</style>
+  </head>
+  <body>
 
-</section>
-<footer>
-  <p>Footer</p>
-</footer>
 
-</body>
-</html>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">CodeClan News</div>
+      <!-- NAVIGATION MENU -->
+      <ul class="nav-links">
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">About</a></li>
+          <li class="services">
+            <a href="/">Services</a>
+          </li>
+          <li><a href="/">Pricing</a></li>
+          <li><a href="/">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
+    <section>
+      <nav>
+        <h1>Login</h1>
+        <div class="respond">
+          <form name="login">
+            <p class="paragraph">Username <input class="login" type="text"
+                placeholder="Enter Username" name="userid" /></p>
+            <p class="paragraph">Password <input class="login" type="password"
+                placeholder="Enter Password" name="pswrd" /></p>
+            <p class="paragraph"><input type="button" onclick="check(this.form)"
+                value="Submit" /></p>
+          </form>
+        </nav>
+
+        <article>
+          <h1>Latest</h1>
+          <h4>Blog News</h4>
+
+          <section>
+            <nav>
+
+            </nav>
+          </section>
+
+        </article>
+      </section>
+
+
+      <section>
+        <nav>
+
+          <h1>Main Article Headline</h1>
+          <h4>Author Name</h4>
+
+          <p>London is the capital city of England. It is the most populous city
+            in the United Kingdom, with a metropolitan area of over 13 million
+            inhabitants.</p>
+          <p>Standing on the River Thames, London has been a major settlement
+            for two millennia, its history going back to its founding by the
+            Romans, who named it Londinium.</p>
+          <div id="respond">
+
+            <h3>Leave a Comment</h3>
+
+            <form action="post_comment.php" method="post" id="commentform">
+              <label for="comment" class="required">Your message</label>
+              <textarea name="comment" id="comment" rows="10" tabindex="4"
+                required="required"></textarea>
+
+
+              <input type="hidden" name="comment_post_ID" value="1"
+                id="comment_post_ID" />
+              <input name="submit" type="submit" value="Submit comment" />
+            </form>
+          </div>
+
+
+
+        </nav>
+      </section>
+
+      <section>
+
+
+
+
+      </section>
+      <footer>
+        <p>Footer</p>
+      </footer>
+
+    </body>
+  </html>
