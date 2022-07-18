@@ -4,93 +4,9 @@
     <title>HTML & CSS Homework</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: dodgerblue;
-  padding: 0px;
-  text-align: left;
-  font-size: 35px;
-  color: white;
-}
-
-/* Container for flexboxes */
-section {
-
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  flex: 1;
-  background: white;
-  padding: 20px;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: white;
-  padding: 10px;
-}
-
-/* Style the footer */
-body > footer {
-  background-color: dodgerblue;
-  color: white;
-}
-
-body > footer > p {
-  padding: 16px;
-  color: white;
-  text-align: center;
-}
-
-#respond textarea {
-  margin-bottom: 10px;
-  display: block;
-  width: 50%;
-
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color:dodgerblue;
-  color: #fff;
- }
- .nav-links a {
-  color: #fff;
- }
- /* LOGO */
- .logo {
-  font-size: 32px;
- }
- /* NAVBAR MENU */
- .menu {
-  display: flex;
-  gap: 1em;
-  font-size: 18px;
- }
-
- 
-</style>
   </head>
   <body>
-
-
     <nav class="navbar">
       <!-- LOGO -->
       <div class="logo">CodeClan News</div>
@@ -121,17 +37,15 @@ body > footer > p {
                 value="Submit" /></p>
           </form>
         </nav>
-
         <article>
           <h1>Latest</h1>
           <h4>Breaking News</h4>
 
           <section>
             <nav>
-
+                <!--  -->
             </nav>
           </section>
-
         </article>
       </section>
 
@@ -184,35 +98,22 @@ body > footer > p {
             consequat.
           </p>
           <div id="respond">
-
             <h3>Leave a Comment</h3>
-
             <form action="post_comment.php" method="post" id="commentform">
               <label for="comment" class="required">Your message</label>
               <textarea name="comment" id="comment" rows="10" tabindex="4"
                 required="required"></textarea>
-
-
               <input type="hidden" name="comment_post_ID" value="1"
                 id="comment_post_ID" />
               <input name="submit" type="submit" value="Submit comment" />
             </form>
           </div>
-
-
-
         </nav>
       </section>
-
       <section>
-
-
-
-
       </section>
       <footer>
         <p>@CodeClan News 2022</p>
       </footer>
-
     </body>
   </html>
